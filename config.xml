@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.0.0" id="com.wlu.bbbudget">
+ 
+  <!-- author -->
+  <author href="http://www.wlu.com/"
+          rim:copyright="Copyright 2013 LaurierBBTeam">Laurier BB10 Team</author>
+ 
+  <!-- application name -->
+  <name>BBBudget</name>
+ 
+  <!-- description -->
+  <description>
+    A sample application to demonstrate some features.
+  </description>
+ 
+  <!-- provides a container for rim:permit to specift application permissions for device features -->
+  <rim:permissions>
+    <rim:permit>read_device_identifying_information</rim:permit>
+    <rim:permit>access_shared</rim:permit>
+    <rim:permit>_sys_use_consumer_push</rim:permit>
+	<rim:permit>run_when_backgrounded</rim:permit>
+	<rim:permit>bbm_connect</rim:permit>
+	<rim:permit>access_pimdomain_messages</rim:permit>
+	<rim:permit>access_pimdomain_calendars</rim:permit>
+	<rim:permit>post_notifications</rim:permit>
+  </rim:permissions>
+ 
+  <!-- icon that represents the application on the Home screen of the BlackBerry device -->
+  <icon src="icons/icon-150.png"/>
+ 
+  <!-- Specifies the image to display on the screen while your application loads -->
+  <rim:splash src="splash-1280x768.png"/>
+  <rim:splash src="splash-768x1280.png"/>
+ 
+  <!-- application start page -->
+  <content src="index.html"/>
+ 
+  <!-- features and functionality that application can access -->
+  <!-- param is the parameter for a particular feature, must be a child of feature element -->
+  <feature id="blackberry.ui.contextmenu"/>
+  
+  <feature id="blackberry.ui.dialog"/>
+  
+  <feature id="blackberry.app.orientation">
+    <param name="mode" value="portrait" />
+  </feature>
+ 
+  <feature id="blackberry.app">
+    <param name="backgroundColor" value="0xFFFF0000" />
+  </feature>
+ 
+  <!-- end user license and copyright information -->
+  <license href="http://www.example.com/"/>
+ 
+</widget>
